@@ -1,4 +1,4 @@
 print("Hello!")
 
-name = input("Enter your name, pls:): ")
+name = input("Enter your name: ")
 print("Hello " + name)
