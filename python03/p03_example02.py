@@ -1,30 +1,14 @@
-print("--- Greet ---")
 
+even = 0
+odd = 0
 
-def greet(name="Anonymous"):
-    print("Hello", end="")
-    if name == "Anonymous":
-        print()
-        return
-    print(f" {name}")
-    return  # Optional return here
+for i in range(5):
+    num = int(input(f"Enter number {i + 1}: "))
+    if num % 2 == 0:
+        even += 1
+    else:
+        odd += 1
 
+print(f"Total even numbers: {even}")
+print(f"Total odd numbers: {odd}")
 
-greet("James")
-greet()
-
-print("--- Greet 2 ---")
-
-
-def greet2(name=None):
-    print("Hello", end="")
-    if name is None:
-        print()
-        return
-    print(f" {name}", end="")
-    print()
-    return  # Optional return here
-
-
-greet2("James")
-greet2()
